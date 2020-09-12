@@ -17,12 +17,13 @@ the United States Chicago, New York City, and Washington.
 Click on 'bikeshare_2.py' or navigate to the 'bikeshare_2.py' directory using
 cd [directory] then 'python bikeshare_2.py'
 
-***How does it work***
+***How does it work?***
+
 The program starts taking user's inputs; city to analyze(e.g. Chicago), month
 to filter with or 'all' if you don't want to filter with month, day to filter with
 or 'all' if you don't want to filter with a specific day.
 
-**What it gives us**
+**What does it give us?**
   * Info about most common time
       * The most common  month
       * The most common day
