@@ -51,7 +51,7 @@ or 'all' if you don't want to filter with a specific day.
 
   * Show raw data depend on user choice
 
- ****This project is part of Nano degree projects for Data Analysis.
+ **This project is part of Nano degree projects for Data Analysis.**
 
 
 ## Resources
