@@ -14,7 +14,7 @@ the United States Chicago, New York City, and Washington.
  Regardless, each bike can serve several users per day.
 
 ***How to Run the program***
-Click in 'bikeshare_2.py' or navigate to the 'bikeshare_2.py' directory using
+Click on 'bikeshare_2.py' or navigate to the 'bikeshare_2.py' directory using
 cd [directory] then 'python bikeshare_2.py'
 
 ***How does it work***
