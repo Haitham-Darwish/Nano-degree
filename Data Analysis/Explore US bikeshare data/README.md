@@ -23,33 +23,33 @@ to filter with or 'all' if you don't want to filter with month, day to filter wi
 or 'all' if you don't want to filter with a specific day.
 
 **What it gives us**
-  • Info about most common time
-      ○ The most common  month
-      ○ The most common day
-      ○  The most common hour
-      ○ Time taken to calculate it
+  * Info about most common time
+      * The most common  month
+      * The most common day
+      *  The most common hour
+      * Time taken to calculate it
 
-  • Info about most Popular Stations
-      ○ The most common start station
-      ○ The most common end station
-      ○ The most common start and end station
-      ○ Time taken to calculate it
+  * Info about most Popular Stations
+      * The most common start station
+      * The most common end station
+      * The most common start and end station
+      * Time taken to calculate it
 
-  • Info about most trip duration
-      ○ The total travel time and its count
-      ○ The average travel time and its count
-      ○ Time taken to calculate it
+  * Info about most trip duration
+      * The total travel time and its count
+      * The average travel time and its count
+      * Time taken to calculate it
 
-  • Info about user stats.
-      ○ Info about user type
+  * Info about user stats.
+      * Info about user type
         Number of Subscribers, number of Customer, and # of Dependent
-      ○ Info about gender
+      - Info about gender
         Number of males and # of females.
-      ○ Most common year Birth(if in CSV file)
-      ○ oldest and youngest year of birth(if in CSV file)
-      ○ Time taken to calculate it
+      - Most common year Birth(if in CSV file)
+      - oldest and youngest year of birth(if in CSV file)
+      - Time taken to calculate it
 
-  • Show raw data depend on user choice
+  * Show raw data depend on user choice
 
  ****This project is part of Nano degree projects for Data Analysis.
 
