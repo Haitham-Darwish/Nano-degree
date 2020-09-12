@@ -58,3 +58,5 @@ or 'all' if you don't want to filter with a specific day.
 ## Resources
 
 [Pandas time](https://pandas.pydata.org/pandas-docs/stable/reference/series.html#time-series-related )
+
+Udacity Team
