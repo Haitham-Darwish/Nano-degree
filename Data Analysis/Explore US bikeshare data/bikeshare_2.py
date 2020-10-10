@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import sys
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -22,8 +23,18 @@ def get_filters():
     # HINT: Use a while loop to handle invalid inputs
     city = input("Please specify a city to analyze: ")
 
+
     while(city.lower() not in CITY_DATA.keys()):
-        city = input("""Please, enter a correct city
+
+        for city_name in CITY_DATA.keys():
+            if(city.lower().startswith(city_name[0])):
+                answer=input("Did you mean "+city_name+": ")
+                if(answer.lower().startswith('y')):
+                    city=city_name
+                    break
+
+        if(city.lower() not in CITY_DATA.keys()):
+            city = input("""Please, enter a correct city
                     (chicago, new york city, washington): """)
 
 
@@ -32,7 +43,15 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     month = input("Please specify a month to analyze:")
     while(month.lower() not in allowed_months):
-        month = input("""Please, enter a correct month
+        for month_name in allowed_months:
+            if(month.lower().startswith(month_name[0])):
+                answer=input("Did you mean %s: "%month_name)
+                if(answer.lower().startswith('y')):
+                    month=month_name
+                    break
+
+        if(month.lower() not in allowed_months):
+            month = input("""Please, enter a correct month
                 (all, january, february, ... , june): """)
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
@@ -46,11 +65,19 @@ def get_filters():
     day = input("Please specify a day to analyze: ")
     #print(allowed_days)
     while(day.lower() not in allowed_days):
-        day = input("""Please specify a day to analyze,
+        for day_name in allowed_days:
+            if(day.lower().startswith(day_name[0])):
+                answer=input("Did you mean %s: "%day_name)
+                if(answer.lower().startswith('y')):
+                    day=day_name
+                    break
+
+        if(day.lower() not in allowed_days):
+            day = input("""Please specify a day to analyze,
                                     (all, saturday...): """)
 
     print('-'*40)
-    return city, month, day
+    return city.lower(), month.lower(), day.lower()
 
 
 def load_data(city, month, day):
@@ -66,6 +93,25 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+
+	# To make sure that the inputs in lower case and type string
+	# in case if the function is used in another program.
+
+    if(type(city) != str):
+        print("City should be the name of the city (String)")
+        sys.exit()
+    if(type(month) is not str):
+    	print("Month should be the name of the month (String)")
+    	sys.exit()
+    if(type(day) is not str):
+    	print("Day should be the name of the day (String)")
+    	sys.exit()
+
+    #print(type(city),type(month),type(day))
+    city=city.lower()
+    month=month.lower()
+    day=day.lower()
+
     df=pd.read_csv(CITY_DATA[city])
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
