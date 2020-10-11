@@ -1,12 +1,12 @@
 ## Table of Content 
 * [Introduction](#Introduction)
-* [Project Overview](#Project Overview)
+* [Project Overview](#Project-Overview)
 * [Resources](#Resources)
 
 ## Introduction
 Real-world data rarely comes clean. Using Python and its libraries, I gathered data from a variety of sources and in a variety of formats, assess its quality and tidiness, then clean it. This is called data wrangling. I documented my wrangling efforts in a Jupyter Notebook, plus showcase them through analyses and visualizations using Python (and its libraries) and/or SQL.
 
-The dataset that I wrangled (and analyzing and visualizing) is the tweet archive of Twitter user [@dog_rates]((https://twitter.com/dog_rates), also known as [WeRateDogs]((https://twitter.com/dog_rates). WeRateDogs is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because "they're good dogs Brent." WeRateDogs has over 8.8 million followers and has received international media coverage.
+The dataset that I wrangled (and analyzing and visualizing) is the tweet archive of Twitter user [@dog_rates](https://twitter.com/dog_rates), also known as [WeRateDogs](https://twitter.com/dog_rates). WeRateDogs is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because "they're good dogs Brent." WeRateDogs has over 8.8 million followers and has received international media coverage.
 
 WeRateDogs downloaded their Twitter archive and sent it to Udacity via email exclusively for udacity's student to use in this project. This archive contains basic tweet data (tweet ID, timestamp, text, etc.) for all 5000+ of their tweets as they stood on August 1, 2017. More on this soon.
 
@@ -15,9 +15,9 @@ WeRateDogs downloaded their Twitter archive and sent it to Udacity via email exc
 this project aims to teach us data wrangling. So, the Udacity team did all the previous steps
 then I continued the wrangling
 Data Wrangling is to 
-    * [Gather](#Gather) data
-    * [Assess](#Assess) it
-    * Then [Clean](#Clean)
+   * [Gather](#Gather) data
+   * [Assess](#Assess) it
+   * Then [Clean](#Clean)
 
 However, I didn't stop at that, I have also made some visualization, as human tends to learn from image and understand it
 more than text, then make some insights about it.
@@ -38,20 +38,29 @@ I have visualized the data and make some insights in [act_report.pdf](https://gi
  
 ***How to Run the program***
 open Jupyter notebook by opening cmd, git bash, or terminal and type
-`
-cd Nano-degree/Data Analysis/Wrangle and Analyze Data
-`
-or
-`
-cd Nano-degree\Data Analysis\Wrangle and Analyze Data
-`
-if windows (cmd)
-`
-jupyter notebook
-`
 
-You can run all the cells except ![API]('api.png') and ![get_json_by_id]('get_json_by_id.png') as the api is not available.
-You can read the file directly.
+<pre>
+<code>
+cd Nano-degree/Data Analysis/Wrangle and Analyze Data
+</code>
+</pre>
+or
+<pre >
+<code>
+cd Nano-degree\Data Analysis\Wrangle and Analyze Data
+</code>
+</pre>
+
+if windows (cmd)
+<pre >
+<code>
+jupyter notebook
+</code>
+</pre>
+
+You can run all the cells except ![API](api.png)  ![get_json_by_id](get_json_by_id.png) 
+
+as the api is not available. You can read the file directly.
  
 ## Resources
 * [pandas](https://pandas.pydata.org)
