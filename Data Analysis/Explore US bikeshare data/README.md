@@ -1,7 +1,7 @@
 # Bike share
 
 ## Introduction
-Used to organized and analysis bike share system
+Used to organize and analysis bike share system
 using pandas and NumPy for three major cities in
 the United States Chicago, New York City, and Washington.
 
